@@ -7,7 +7,7 @@ public class exercicio06 {
 	public static void main(String[] args) {
 
 		int collaboratorPosition;
-		String collaboratorName;
+		String collaboratorName, intro = "Nome do colaborador: ";
 		float oldSalary, newSalary;
 		
 		Scanner scanner = new Scanner (System.in);
@@ -31,22 +31,22 @@ public class exercicio06 {
 		
 		switch(collaboratorPosition){
 		case 1:
-			System.out.printf("Nome do colaborador: " + collaboratorName + ", Cargo: Gerente, com salario atualizado de: %.2f" , (newSalary = (oldSalary + (0.10f * oldSalary))));
+			System.out.printf(intro + collaboratorName + ", Cargo: Gerente, com salario atualizado de: %.2f" , (newSalary = (oldSalary + (0.10f * oldSalary))));
 		break;
 		case 2:
-			System.out.printf("Nome do colaborador: " + collaboratorName + ", Cargo: Vendedor, com salario atualizado de: %.2f" , (newSalary = (oldSalary + (0.07f * oldSalary))));
+			System.out.printf(intro + collaboratorName + ", Cargo: Vendedor, com salario atualizado de: %.2f" , (newSalary = (oldSalary + (0.07f * oldSalary))));
 		break;
 		case 3:
-			System.out.printf("Nome do colaborador: " + collaboratorName + ", Cargo: Supervisor, com salario atualizado de: %.2f" , (newSalary = (oldSalary + (0.09f * oldSalary))));
+			System.out.printf(intro + collaboratorName + ", Cargo: Supervisor, com salario atualizado de: %.2f" , (newSalary = (oldSalary + (0.09f * oldSalary))));
 		break;
 		case 4:
-			System.out.printf("Nome do colaborador: " + collaboratorName + ", Cargo: Motorista, com salario atualizado de: %.2f" , (newSalary = (oldSalary + (0.06f * oldSalary))));
+			System.out.printf(intro + collaboratorName + ", Cargo: Motorista, com salario atualizado de: %.2f" , (newSalary = (oldSalary + (0.06f * oldSalary))));
 		break;
 		case 5:
-			System.out.printf("Nome do colaborador: " + collaboratorName + ", Cargo: Estoquista, com salario atualizado de: %.2f" , (newSalary = (oldSalary + (0.05f * oldSalary))));
+			System.out.printf(intro + collaboratorName + ", Cargo: Estoquista, com salario atualizado de: %.2f" , (newSalary = (oldSalary + (0.05f * oldSalary))));
 		break;
 		case 6:
-			System.out.printf("Nome do colaborador: " + collaboratorName + ", Cargo: Técnico de TI, com salario atualizado de: %.2f" , (newSalary = (oldSalary + (0.08f * oldSalary))));
+			System.out.printf(intro + collaboratorName + ", Cargo: Técnico de TI, com salario atualizado de: %.2f" , (newSalary = (oldSalary + (0.08f * oldSalary))));
 		break;
 		
 		}
