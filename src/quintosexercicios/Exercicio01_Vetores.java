@@ -13,7 +13,7 @@ public class Exercicio01_Vetores {
 		System.out.print("Digite um número para pesquisar no vetor: ");
 		int numeroEscolhido = scanner.nextInt();
 
-		int posicao = -1;
+		int posicao = 0;
 
 		for (int i = 0; i < 10; i++) {
 			if (vetor[i] == numeroEscolhido) {
@@ -22,7 +22,7 @@ public class Exercicio01_Vetores {
 			}
 		}
 
-		if (posicao != -1) {
+		if (posicao != 0) {
 			System.out.println("O numero " + numeroEscolhido + " foi encontrado na posiçao " + posicao + " do vetor.");
 		} else {
 			System.out.println("O numero " + numeroEscolhido + " não foi encontrado!!");
